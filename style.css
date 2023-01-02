@@ -1,0 +1,226 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+iframe {
+  width: 98vw;
+  height: calc(100vh - 150px);
+  margin: 0 auto;
+  display: block;
+}
+
+#about {
+  text-align: center;
+}
+
+#info-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#info-boxes div {
+  width: 30%;
+  text-align: center;
+  margin: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(39, 39, 39);
+}
+
+#contact,
+#address,
+#opening-hours,
+#sitemap {
+  width: 22%;
+  text-align: center;
+}
+
+#sitemap-text a {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+#sitemap-text a:hover {
+  color: rgb(101, 205, 239);
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 100px;
+}
+
+#nav {
+  display: flex;
+}
+
+#nav a {
+  margin: 0 10px;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+#nav a:hover {
+  color: rgb(101, 205, 239);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.slideshow {
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideshow-box {
+  display: inline-block;
+  width: 300px;
+  margin: 0 10px;
+  border: 1px solid white;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.slideshow-box:hover {
+  opacity: 0.5;
+}
+
+#slidehow-box-heading {
+  margin-top: 20px;
+}
+
+.slideshow-box h2 {
+  margin: 0 0 10px 0;
+}
+
+.slideshow-box img {
+  width: 100%;
+}
+
+.slideshow-box .date {
+  font-style: italic;
+  color: #777;
+}
+
+.slideshow-box .meta {
+  font-size: 12px;
+  color: #999;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+
+.map-style {
+  width: 60vw;
+  height: 60vh;
+}
+/* style the map marker */
+.marker {
+  border: none;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  background-color: #4285f4;
+  border-radius: 50%;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.icon:hover {
+  opacity: 0.5;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon-row {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}

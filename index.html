@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flux the Sustainable Night Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <a href="#">
+        <img src="media/logo.png" alt="Logo" id="logo" />
+      </a>
+      <div id="nav">
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#facts">Facts</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <hr />
+    <section>
+      <iframe
+        src="https://www.youtube.com/embed/R4760pb9ERg?autoplay=1&mute=1&controls=0&loop=1"
+        frameborder="0"
+      >
+      </iframe>
+    </section>
+    <section id="about">
+      <h1>About Us</h1>
+      <p style="text-align: center; word-wrap: break-word">
+        In der Nachtszene wird sehr viel Strom verbraucht - Es wird mit einem
+        jährlichen Co2-Ausstoß von knapp 90 Tonnen pro Club gerechnet. Genau
+        hier steuert FLUX dagegen und bietet durch ein neuartiges Konzept
+        umweltschonendes Tanzvergnügen.
+      </p>
+      <div id="info-boxes">
+        <div>
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is to provide a fun and enjoyable nightlife experience
+            while minimizing our impact on the environment.
+          </p>
+        </div>
+        <div>
+          <h2>Our Practices</h2>
+          <p>
+            We prioritize sustainability in all aspects of our business, from
+            using renewable energy sources to promoting eco-friendly behaviors
+            among our staff and patrons.
+          </p>
+        </div>
+        <div>
+          <h2>Our Impact</h2>
+          <p>
+            Through our sustainability efforts, we aim to make a positive
+            contribution to the local community and the planet.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1>Events</h1>
+      <p>
+        Buchungen sind nur für diese Special Events möglich. Für alle anderen
+        Club-Abende gibt es keine Vorverkaufskarten. Komm wie du bist und sei
+        frei!
+      </p>
+      <div class="slideshow">
+        <div class="slideshow-box">
+          <h2 id="slidehow-box-heading">Techno Night</h2>
+          <img src="media/techno.png" alt="Box 1 Image" />
+          <p class="date">January 1, 2023</p>
+          <p class="meta">Some small meta text</p>
+        </div>
+        <div class="slideshow-box">
+          <h2 id="slidehow-box-heading">Trance Night</h2>
+          <img src="media/techno.png" alt="Box 2 Image" />
+          <p class="date">January 2, 2023</p>
+          <p class="meta">Some small meta text</p>
+        </div>
+        <div class="slideshow-box">
+          <h2 id="slidehow-box-heading">Electronic Night</h2>
+          <img src="media/techno.png" alt="Box 3 Image" />
+          <p class="date">January 3, 2023</p>
+          <p class="meta">Some small meta text</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 style="text-align: center">Facts</h2>
+      <div class="icon-row">
+        <div class="tooltip">
+          <img
+            class="icon"
+            src="media/people-dancing.png"
+            alt="people-dancing"
+          />
+          <span class="tooltiptext"
+            >Durch einen Tanzschritt können zwischen 2 und 20 Watt Energie
+            gewonnen werden.</span
+          >
+        </div>
+        <div class="tooltip">
+          <img class="icon" src="media/lightning.png" alt="lighning" />
+          <span class="tooltiptext"
+            >Pro Jahr verbraucht eine Diskothek (Durch Lichtanlagen, Belüftungs-
+            und Soundsystem) etwa so viel Strom wie 150 Haushalte im Jahr. FLUX
+            verbraucht dagegen nur ca. halb so viel Wasser und ein Drittel
+            weniger Strom.</span
+          >
+        </div>
+        <div class="tooltip">
+          <img
+            class="icon"
+            src="media/tropical-drink.png"
+            alt="tropical-drink"
+          />
+          <span class="tooltiptext"
+            >Durch die überwiegende Nutzung von Recup Bechern wird 70% weniger
+            Wasser verbraucht</span
+          >
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 style="text-align: center">Our Location</h2>
+      <div class="map-container">
+        <div id="map" class="map-style" style="filter: invert(90%)"></div>
+        <script>
+          function initMap() {
+            var address = "Europa Passage 5 20095 Hamburg";
+            var map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 15,
+              mapId: "90257ee1930b96f4",
+              center: { lat: 37.4224764, lng: -122.0842499 },
+            });
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode({ address: address }, function (results, status) {
+              if (status === "OK") {
+                map.setCenter(results[0].geometry.location);
+                var marker = new google.maps.Marker({
+                  map: map,
+                  position: results[0].geometry.location,
+                });
+              } else {
+                alert(
+                  "Geocode was not successful for the following reason: " +
+                    status
+                );
+              }
+            });
+          }
+        </script>
+        <script
+          async
+          defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqgxzkZdSE-9DrMTtqPRsHCzgvieLsQuo&callback=initMap"
+        ></script>
+      </div>
+    </section>
+    <footer>
+      <div id="contact">
+        <h2>Contact</h2>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: info@sustainablenightclub.com</p>
+      </div>
+      <div id="address">
+        <h2>Address</h2>
+        <p>123 Main Street</p>
+        <p>City, Country 12345</p>
+      </div>
+      <div id="opening-hours">
+        <h2>Opening Hours</h2>
+        <p>Monday-Friday: 9pm-2am</p>
+        <p>Saturday-Sunday: 10pm-3am</p>
+      </div>
+      <div id="sitemap">
+        <h2>Sitemap</h2>
+        <div id="sitemap-text">
+          <p><a href="#">Contact</a></p>
+          <p><a href="#">Impressum</a></p>
+          <p><a href="#">AGBs</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
