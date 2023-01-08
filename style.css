@@ -26,6 +26,11 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 10px;
+}
+
+#info-box {
+  border: 1px solid white;
 }
 
 #info-boxes div {
@@ -56,7 +61,7 @@ footer {
 }
 
 #sitemap-text a:hover {
-  color: rgb(101, 205, 239);
+  color: #86ccad;
 }
 
 #header {
@@ -250,7 +255,7 @@ body {
   font-size: 72px;
   font-style: SemiBold 600;
   right: 0;
-  animation: move-text 5s linear infinite;
+  animation: move-text 6.5s linear infinite;
 }
 
 @keyframes move-text {
